@@ -12,7 +12,7 @@ int main() {
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     //Inicializando variáveis
     char estado;
-    char condigoCarta[4];
+    char codigoCarta[4];
     char nomeCidade[50];
     int populacao;
     float area;
@@ -26,10 +26,10 @@ int main() {
     //Armazenando dados da carta 1
     printf("Digite os dados a seguir referente a Carta 1\n");
     printf("Digite a letra, em maiúsculo, referente ao Estado\n");
-    scanf(" %s", &estado);
-    
+    scanf(" %c", &estado);
+
     printf("Digite o código da carta, iniciando com uma letra maiúscula seguida de dois números\n");
-    scanf(" %s", &condigoCarta);
+    scanf(" %s", &codigoCarta);
 
     printf("Entre com o nome da cidade\n");
     scanf(" %s", &nomeCidade);
@@ -48,21 +48,21 @@ int main() {
 
     // Exibição dos Dados da Carta 1:
     printf("\nCarta 1");
-    printf("\nEstado: %s", estado);
-    printf("\nCódigo: %s", condigoCarta);
+    printf("\nEstado: %c", estado);
+    printf("\nCódigo: %s", codigoCarta);
     printf("\nNomde da cidade: %s", nomeCidade);
     printf("\nPopulação: %d", populacao);
     printf("\nÁrea: %f", area);
     printf("\nPIB: R$%f", pib);
-    printf("\nNúmero de Pontos Turísticos: %d", &qtdPontosTuristicos);
+    printf("\nNúmero de Pontos Turísticos: %d", qtdPontosTuristicos);
 
     //Armazenando dados da carta 2
-    printf("Digite os dados a seguir referente a Carta 2\n");
+    printf("\nDigite os dados a seguir referente a Carta 2\n");
     printf("Digite a letra, em maiúsculo, referente ao Estado\n");
-    scanf(" %s", &estado);
+    scanf(" %c", &estado);
 
     printf("Digite o código da carta, iniciando com uma letra maiúscula seguida de dois números\n");
-    scanf(" %s", &condigoCarta);
+    scanf(" %s", &codigoCarta);
 
     printf("Entre com o nome da cidade\n");
     scanf(" %s", &nomeCidade);
@@ -81,13 +81,13 @@ int main() {
 
     // Exibição dos Dados da Carta 2:
     printf("\nCarta 2");
-    printf("\nEstado: %s", estado);
-    printf("\nCódigo: %s", condigoCarta);
+    printf("\nEstado: %c", estado);
+    printf("\nCódigo: %s", codigoCarta);
     printf("\nNomde da cidade: %s", nomeCidade);
     printf("\nPopulação: %d", populacao);
     printf("\nÁrea: %f", area);
     printf("\nPIB: R$%f", pib);
-    printf("\nNúmero de Pontos Turísticos: %d", &qtdPontosTuristicos);
+    printf("\nNúmero de Pontos Turísticos: %d", qtdPontosTuristicos);
 
     return 0;
 }
